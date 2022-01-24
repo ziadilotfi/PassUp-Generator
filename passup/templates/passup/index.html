@@ -1,0 +1,86 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PassUp</title>
+    <link rel="stylesheet" href="{% static 'passup/styles.css'%}">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark " style="background-color:#0c0c36;">
+    <!-- Container wrapper -->
+    <div class="container-fluid">
+  
+      <!-- Navbar brand -->
+      <a class="navbar-brand" href="#">PassUP</a>
+  
+      <!-- Toggle button -->
+      <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+  
+      <!-- Collapsible wrapper -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+  
+        </ul>
+  
+        <!-- Icons -->
+        <ul class="navbar-nav d-flex flex-row me-1 ml-auto">
+          <li class="nav-item me-3 me-lg-0 ">
+            <a class="nav-link" href="#"><i class="fab fa-github"></i></a>
+          </li>
+        </ul>
+  
+      </div>
+    </div>
+    <!-- Container wrapper -->
+  </nav>
+  <!-- Navbar -->
+
+  <section class="main py-5 my-5">
+    <h1 class="text-center text-white">PassUp A CS50 Project</h1>
+    <div class="input-group col-md-6 text-center mx-auto">
+        <input id="passbox" type="password" class="form-control rounded text-center" placeholder="Enter Your Password" />
+      </div>
+      <div class="buttons col-md-6 mx-auto mt-4 text-center">
+        <input type="radio" id="easy" name="passgen" value="HTML">
+        <label class="text-white mx-2" for="html">Easy</label>
+        <input type="radio" id="medium" name="passgen" value="HTML">
+        <label class="text-white mx-2" for="html">Medium</label>
+        <input type="radio" id="hard" name="passgen" value="HTML">
+        <label class="text-white mx-2" for="html">Hard</label>
+      
+      </div>
+      <div class="col-lg-6 mx-auto text-center">
+        <button onclick="showpass()" class="btn btn-danger btn-md active" role="button" >Show Password</button>
+      <button  onclick="func1()" class="btn btn-primary btn-md active" role="button" aria-pressed="true">Upgrade My Password</button>
+      <button class="btn btn-secondary btn-md active" type="reset" onclick="reset()" >Reset</button>
+      </div>
+      <h3 class="text-center text-white mt-5">How PassUp Upgrades Your Password ?</h3>
+      <h6 class="text-center text-white">PassUP Add Symbols And Numbers To Your Password In Order To Make It Stronger</h6>
+      <h6 class="text-center text-white">PassUP Python Code On<a class="btn btn-secondary" href="https://github.com/ziadilotfi/PassUp">Github</a> </h6>
+
+    </section>
+    <script src="{% static 'passup/app.js'%}"></script>
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+</body>
+</html>
